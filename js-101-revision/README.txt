@@ -6,3 +6,10 @@ Switch
 
 Basic function
   
+  
+/**---------------**/
+pass by ref
+pass by value
+
+
+
