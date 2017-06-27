@@ -1,0 +1,9 @@
+
+.tbl, .form{
+  margin-top:10px;
+}
+
+.tbl tr th, .tbl tr td{
+  padding:10px;
+  
+}
