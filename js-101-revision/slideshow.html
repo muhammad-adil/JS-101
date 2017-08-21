@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<script>
+	var i = 0; // Start point
+	var images = [];
+	var time = 1000;
+
+	// Image List
+	images[0] = "http://lorempixel.com/400/200/animals";
+	images[1] = "http://lorempixel.com/400/200/sports";
+	images[2] = "http://lorempixel.com/400/200/food";
+	images[3] = "http://lorempixel.com/400/200/people";
+
+	// Change Image
+	function changeImg(){
+		document.slide.src = images[i];
+
+		if(i < images.length - 1){
+			i++;
+		} else {
+			i = 0;
+		}
+
+		setTimeout("changeImg()", time);
+	}
+
+	window.onload = changeImg;
+
+</script>
+
+</head>
+
+<body>
+
+<img name="slide" width="400" height="200">
+
+</body>
+</html>
