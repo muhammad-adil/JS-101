@@ -15,6 +15,17 @@ Here are seven JavaScript concepts you must understand before you go into your n
 
 7) Any MV* framework. These help you organize your application and provide a separation of concerns. You'll need experience with at least one on your resume. The top contenders are Backbone.js, Angular, and Ember. You might also want to learn about MVP. There's a tiny MVP library called Riot that an experienced JavaScript programmer can learn in an afternoon: https://moot.it/riotjs/
 
+
+
+## Classical Inheritance:
+    A constructor function instantiates an instance via the “new” keyword. This new instance inherits properties from a parent class.
+  
+ ## Prototypal Inheritance:
+    An instance is created by cloning an existing object that serves as a prototype. This instance—often instantiated using a factory function or “Object.create()”—can benefit from selective inheritance from many different objects.
+
+
+
+
 The future:
 
 Learn about Web Components and get ahead of the next wave of client side application development. You can get started using Google's Polymer project.
