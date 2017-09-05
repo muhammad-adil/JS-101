@@ -1,0 +1,23 @@
+<html>
+<head>
+<script src="jquery-3.1.1.min.js" type="text/javascript"></script>
+<script src="countUp.min.js" type="text/javascript"></script>
+</head>
+<body>
+<div style="text-align:center;background-color: #cc181e;height:100px;">
+<h1 id="counter" style="color: white;padding-top: 25px;"></h1>
+</div>
+<script type="text/javascript">
+  var options = {
+  useEasing : true, 
+  useGrouping : true, 
+  separator : ',', 
+  decimal : '.', 
+  prefix : '', 
+  suffix : '' 
+};
+var demo = new CountUp("counter", 0, 200, 2, 5, options);
+demo.start();
+</script>
+</body>
+</html>
