@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<meta charset="UTF-8"/>
+	<title>JS </title>
+</head>
+
+<body>
+
+	<input type="text" id="entry" />
+	<span id="output">Start Typing</span>
+
+	<script>
+		var app = {};
+
+		app.getElement = function(element){
+		return document.getElementById(element);
+		}
+
+		app.entry = app.getElement('entry');
+		app.output = app.getElement('output');
+
+		app.entry.onkeyup = function() {
+			// console.log('worked');
+			app.output.innerText = this.value;
+		}
+	</script>
+</body>
+</html>
