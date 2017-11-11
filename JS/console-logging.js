@@ -66,10 +66,15 @@ for(var i = 0; i < 100; i++){
 	}
 }
 
+//log timing
+console.time("createObjects");
 
+var array = [];
+for(var i = 0; i < 10000; i++){
+	array.push({index: i })
+}
 
-
-
+console.timeEnd("createObjects")
 
 
 
