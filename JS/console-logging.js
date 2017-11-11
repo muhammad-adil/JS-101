@@ -48,3 +48,31 @@ for(var i = 0; i < 100; i++){
 //console.assert
 var foo = undefined;
 console.assert(foo, "Foo wasn't set");
+
+
+//count events
+var numGreaterThan50 = 0;
+var numLessThan50 = 0;
+
+for(var i = 0; i < 100; i++){
+	var num = Math.random() * 100;
+
+	if( num > 50 ){
+		// console.log("Greater than 50!", ++numGreaterThan50);
+		console.count("Greater than 50")
+	} else {
+		// console.log("Less than 50!" , ++numLessThan50);
+		console.count("Less than 50")
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
