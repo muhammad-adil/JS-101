@@ -77,7 +77,15 @@ for(var i = 0; i < 10000; i++){
 console.timeEnd("createObjects")
 
 
+//pretty print table
+function Character(name, power){
+	this.name = name;
+	this.power = power;
+}
 
+var buffy = new Character("buffy", "slayer");
+var willow = new Character("willow");
+var spike = new Character("spike","vampire");
 
-
-
+var chars = [buffy, willow, spike];
+console.table(chars);
