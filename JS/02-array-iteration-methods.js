@@ -48,6 +48,11 @@ console.log(allPositiveNumbers);
 
 
 // find
+const objects = [{id: 'a'}, {id: 'b'}, {id: 'c'}];
+const found = objects.find(function(item){
+	return item.id === 'b';
+});
+console.log(found);
 
 
 // find index
