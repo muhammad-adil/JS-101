@@ -35,8 +35,13 @@ the for in loops through innumerable properties while for
 of loops through iterable objects such as array map & sets.
 */
 
+for(let i in arr){
+	console.log(i); //"0","1","2","foo"
+}
 
-
+for(let i of arr){
+	console.log(i); //3,5,7
+}
 
 
 
