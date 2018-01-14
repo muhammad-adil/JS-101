@@ -43,18 +43,3 @@ for(let i of arr){
 	console.log(i); //3,5,7
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
