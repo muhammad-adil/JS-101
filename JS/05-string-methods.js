@@ -69,8 +69,18 @@ console.log(stringOne.startsWith("")); //true
 console.log(stringTwo.substr(2,4));
 
 
+// substring()
+console.log(stringOne.substring(2,4));
 
 
+// toLowerCase() //change string to lowercase
+console.log(stringTwo.toLowerCase());
 
 
+// toUpperCase() //change string to uppercase
+console.log(stringTwo.toUpperCase());
 
+
+// trim() //remove spaces
+var stringThree = "     do something";
+console.log(stringThree.trim());
