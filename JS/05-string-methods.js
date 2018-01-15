@@ -28,22 +28,45 @@ console.log(stringOne.fromCharCode(114));
 // includes()
 console.log(stringTwo.includes("end")) //true
 
+
 // indexOf()
+console.log(stringTwo.indexOf("end")) //5
 
 
 // lastIndexOf()
+console.log(stringTwo.lastIndexOf("end")) //17
 
 
 // match()
+console.log(stringTwo.match(/end/g));
 
 
 // repeat()
+console.log(stringTwo.repeat(3));
+
 
 // replace()
+console.log(stringTwo.match(/end/g, "END"));
 
 
+// search()
+console.log(stringTwo.search("end"));
 
 
+// slice()
+console.log(stringTwo.slice(2, 4));
+
+
+// split()
+console.log(stringTwo.split(" "));
+
+
+// startsWith()
+console.log(stringOne.startsWith("")); //true
+
+
+// substr
+console.log(stringTwo.substr(2,4));
 
 
 
