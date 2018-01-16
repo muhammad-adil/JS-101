@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>AJAX</title>
+</head>
+
+<body>
+	<h1>AJAX with JavaScript!</h1>
+	<p id="demo">Let AJAX change this text</p> 
+	<button type="button" onclick="loadDoc()">Change Content</button>
+
+
+<script type="text/javascript">
+	// AJAX = Asynchronous JavaScript And XML
+
+function loadDoc() {
+  var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+     document.getElementById("demo").innerHTML = this.responseText;
+    }
+  };
+  xhttp.open("GET", "https://cors-anywhere.herokuapp.com/https://jsonplaceholder.typicode.com/posts/1", true); //  http://carnes.cc/code/ajax_example.txt
+  xhttp.send();
+}
+
+/* 
+Adding "https://cors-anywhere.herokuapp.com/" prevents the following error:
+
+XMLHttpRequest cannot load http://carnes.cc/code/ajax_example.txt. No 'Access-Control-Allow-Origin' header is present on the requested resource. Origin 'https://s.codepen.io' is therefore not allowed access.
+*/
+
+/*
+0 The request is not initialized 
+1 The request has been set up 
+2 The request has been sent 3 
+The request is in process 4 
+The request is complete
+*/
+
+</script>
+</body>
+
+</html>
