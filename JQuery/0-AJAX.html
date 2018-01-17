@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>AJAX</title>
+</head>
+
+<body>
+    <h1>AJAX with jQuery!</h1>
+    <p id="demo">Let AJAX change this text</p>
+    <button type="button" onclick="loadDoc()">
+            Change Content
+        </button>
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+        // AJAX = Asynchronous JavaScript And XML
+        // jQuery: AJAX = Asynchronous JavaScript And XML
+
+        function loadDoc() {
+            $.post("https://cors-anywhere.herokuapp.com/http://carnes.cc/code/ajax_example.txt", {
+                    name: "Beau Carnes",
+                    city: "Grand Rapids"
+                },
+                function(data, status) {
+                    console.log("Data: " + data + "\nStatus: " + status);
+                });
+
+            //get
+            //   $.get("https://cors-anywhere.herokuapp.com/http://carnes.cc/code/ajax_example.txt",
+
+            //           function(data, status){
+            //             console.log("Data: " + data + "\nStatus: " + status);
+            //     });
+
+
+            // $("#demo").load("https://cors-anywhere.herokuapp.com/http://carnes.cc/code/ajax_example.txt", function(responseTxt, statusTxt, xhr){
+            //           if(statusTxt == "success")
+            //               alert("External content loaded successfully!");
+            //           if(statusTxt == "error")
+            //               alert("Error: " + xhr.status + ": " + xhr.statusText);
+            //       });
+
+
+
+            // var xhttp = new XMLHttpRequest();
+            // xhttp.onreadystatechange = function() {
+            //   if (this.readyState == 4 && this.status == 200) {
+            //    document.getElementById("demo").innerHTML = this.responseText;
+            //   }
+            // };
+            // xhttp.open("GET", "https://cors-anywhere.herokuapp.com/http://carnes.cc/code/ajax_example.txt", true);
+            // xhttp.send();
+        }
+    </script>
+</body>
+
+</html>
